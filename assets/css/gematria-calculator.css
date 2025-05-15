@@ -1,0 +1,100 @@
+/**
+ * סגנונות CSS למחשבון גימטריה
+ */
+.gematria-calculator-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Assistant', 'Rubik', sans-serif;
+}
+
+.gematria-calculator-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#gematria-calculator-text {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#gematria-calculator-button,
+#gematria-calculator-clear {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#gematria-calculator-button {
+    background-color: #3498db;
+    color: white;
+}
+
+#gematria-calculator-button:hover {
+    background-color: #2980b9;
+}
+
+#gematria-calculator-clear {
+    background-color: #e74c3c;
+    color: white;
+    margin-left: 5px;
+}
+
+#gematria-calculator-clear:hover {
+    background-color: #c0392b;
+}
+
+.gematria-calculator-result {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.gematria-year {
+    font-weight: normal;
+}
+
+.gematria-number {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.gematria-positive {
+    color: #2ecc71;
+}
+
+.gematria-negative {
+    color: #e74c3c;
+}
+
+.gematria-calculator-error {
+    color: #e74c3c;
+    margin-top: 10px;
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 480px) {
+    .gematria-calculator-form {
+        flex-direction: column;
+    }
+    
+    #gematria-calculator-text,
+    #gematria-calculator-button {
+        width: 100%;
+    }
+}
+
+/* התאמות לכיוון טקסט RTL */
+[dir="rtl"] .gematria-calculator-container {
+    text-align: right;
+}
